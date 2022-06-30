@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+.clip-path{
+    height:70%;
+    width:40vw;
+    background-color:#AED6F1;
+    position:absolute;
+    z-index:-1;
+    right:em;
+    clip-path: ellipse(23rem 30rem at 20rem 1rem);
+}
+.clip-path2{
+    height:15%;
+    width:20vw;
+    background-color:#082D92;
+    z-index: -1;
+    position:absolute;
+    left:33em;
+    clip-path: ellipse(19rem 30rem at 19rem 1rem);
+}
+.dot{
+  background:radial-gradient(farthest-side,blue 80%,blue);
+  background-size:5px 5px;
+  height:10%;
+  border-radius:50%;
+  width:10%;
+  background-repeat:no-repeat;
+}
+}
+html{
+font-family:'Roboto', sans-serif;
+}
