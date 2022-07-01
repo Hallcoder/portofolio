@@ -1,12 +1,17 @@
 import React from 'react';
+import Footer from '../components/footer';
 import NavBar from '../components/navBar';
 import Info from './../components/info';
 function Home() {
-    return ( 
-        <div>
+    return (
+        <React.Fragment>
+            <div className="h-full ">
             <NavBar />
-             <Info />
-        </div>
+            <Info />
+            <Footer />
+            </div>
+            
+        </React.Fragment>
      );
 }
 

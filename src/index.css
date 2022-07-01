@@ -2,14 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 @layer utilities {
+*{
+margin:0;
+padding:0;
+}
+.heading{
+  font-family: 'Modak', cursive;
+}
 .clip-path{
     height:70%;
     width:40vw;
     background-color:#AED6F1;
     position:absolute;
     z-index:-1;
-    right:em;
     clip-path: ellipse(23rem 30rem at 20rem 1rem);
+}
+.clip-path-works{
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+.z-index{
+z-index:-1;
+width:0.1em;
+right:9em;
+position:absolute;
+height:5rem;
+margin-top:2em;
+background-color:#000;
+}
+.z-index1{
+z-index:-1;
+width:0.1em;
+right:9em;
+position:absolute;
+height:5.8rem;
+margin-top:9em;
+background-color:#000;
 }
 .clip-path2{
     height:15%;
