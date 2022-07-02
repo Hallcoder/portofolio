@@ -9,6 +9,7 @@ import Project from "../images/projectManagement.webp";
 import Contacts from "./contacts.jsx";
 import Skill from "./skill";
 import Work from "./work";
+import Skills from "./skills";
 function Info() {
   return (
     <div className="h-3/6 ">
@@ -53,80 +54,15 @@ function Info() {
         <p className="font-bold">Scroll down</p>
       </div>
       <h1 className="font-bold m-auto text-5xl mb-8 w-3/12">My Skills</h1>
-      <div id="Skills" className="grid gap-y-2 flex-wrap  justify-around m-auto w-9/12">
-        <div className="flex flex-wrap justify-around h-5/6">
-          <Skill
-            name={"Frontend Design & Development"}
-            icon={
-              <CgWebsite className="rounded-md text-4xl bg-orange-100 text-orange-500" />
-            }
-            text={
-              <p>
-                <strong>Develop Intuitively.</strong>Lorem Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Ducimus quam distinctio nisi
-                eum quis necessitatibus. In eaque porro impedit velit? ipsum
-                dolor sit amet consectetur adipisicing elit. Id natus numquam
-                possimus mollitia blanditiis tempora sed nesciunt maxime veniam
-                maiores.
-              </p>
-            }
-          />
-          <Skill
-            name={"Mobile Apps Development"}
-            icon={
-              <CgWebsite className="rounded-md text-4xl bg-blue-100 text-blue-500" />
-            }
-            text={
-              <p>
-                <strong>Develop Intuitively.</strong>Lorem Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Ducimus quam distinctio nisi
-                eum quis necessitatibus. In eaque porro impedit velit? ipsum
-                dolor sit amet consectetur adipisicing elit. Id natus numquam
-                possimus mollitia blanditiis tempora sed nesciunt maxime veniam
-                maiores.
-              </p>
-            }
-          />
-          <Skill
-            name={"Backend Development and APIS"}
-            icon={
-              <CgWebsite className="rounded-md text-4xl bg-red-100 text-red-500" />
-            }
-            text={
-              <p>
-                <strong>Develop Intuitively.</strong>Lorem Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Ducimus quam distinctio nisi
-                eum quis necessitatibus. In eaque porro impedit velit? ipsum
-                dolor sit amet consectetur adipisicing elit. Id natus numquam
-                possimus mollitia blanditiis tempora sed nesciunt maxime veniam
-                maiores.
-              </p>
-            }
-          />
-          <Skill
-            name={"Web Application Development"}
-            icon={
-              <CgWebsite className="rounded-md text-4xl bg-yellow-100 text-yellow-500" />
-            }
-            text={
-              <p>
-                <strong>Develop Intuitively.</strong>Lorem Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Ducimus quam distinctio nisi
-                eum quis necessitatibus. In eaque porro impedit velit? ipsum
-                dolor sit amet consectetur adipisicing elit. Id natus numquam
-                possimus mollitia blanditiis tempora sed nesciunt maxime veniam
-                maiores.
-              </p>
-            }
-          />
-        </div>
+     <div>
+      <Skills />
       </div>
       <div
         id="works"
         className="grid grid-cols-2 gap-2 grid-rows-2 mt-40  rounded-lg w-9/12 m-auto"
       >
-        <div className="flex items-center">
-        <h1 className="font-bold col-span-2 h-48 border-2 bg-[#C1FAFC] text-[#082D92] clip-path-works justify-center  flex items-center  m-auto text-5xl  w-7/12">My Works</h1>
+        <div className="flex self-center bg-cyan-200 rounded-full w-9/12 h-48  justify-self-center border-4 border-dashed">
+        <h1 className="font-bold col-span-2 h-48 bg-[#C1FAFC] text-[#082D92] clip-path-works justify-center  flex items-center  m-auto text-5xl  w-7/12">My Works</h1>
         </div>
         <div className="border-black">
           <Work

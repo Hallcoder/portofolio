@@ -3,8 +3,8 @@ import { BiSend } from "react-icons/bi";
 function Footer() {
   return (
     <React.Fragment>
-      <div className="flex flex-col bg-[#041C62]  relative w-full">
-        <div id="horizontal" className="flex h-5/6 w-9/12 justify-around items-center m-auto">
+      <div className="flex flex-col bg-[#041C62] text-sm h-96  bottom-0  relative w-full">
+        <div id="horizontal" className="flex h-72 w-8/12 justify-around items-center m-auto">
           <div className="flex items-start mt-4">
         <h1  className="heading text-white  text-5xl">Apotre</h1><span className="text-white">&copy;</span>
           </div>
@@ -17,8 +17,8 @@ function Footer() {
             </ul>
           </div>
           <div className="w-6/12 h-full">
-            <h1 className="heading  text-center text-white  text-5xl">Contact Me</h1>
-            <form action="">
+            <h1 className="heading  text-center text-white  text-3xl">Contact Me</h1>
+            <form action="" className="h-full flex flex-col">
               <div className="flex flex-col justify-around">
               <label htmlFor="email" className="text-white  font-extrabold">Email:</label>
               <input  name="email" type='email' id="email" className=" shadow-md shadow-lime-200  rounded-md h-10" />
