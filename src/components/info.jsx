@@ -37,7 +37,7 @@ function Info() {
         <DottedBox />
         <Contacts />
       </div>
-      <div className="flex justify-center mt-4">
+      <div id="quickMessage" className="flex justify-center mt-4">
         <input
           type="text"
           name="small"
@@ -49,26 +49,30 @@ function Info() {
           Send
         </button>
       </div>
-      <div className="flex w-1/12 h-10 rounded-sm justify-center cursor-pointer ml-[8em] items-center shadow-xl border-8 border-white animate-bounce">
+      <div className="flex w-1/12 h-10 rounded-sm justify-center left-0 z-indexScroll bg-white fixed cursor-pointer ml-[8em] items-center shadow-xl border-8 border-white animate-bounce">
         <CgMouse />
         <p className="font-bold">Scroll down</p>
       </div>
+      <div className="flex w-1/12 h-10 rounded-sm justify-center right-4 z-indexScroll bg-white fixed cursor-pointer ml-[8em] items-center shadow-xl border-8 border-white animate-bounce">
+        <CgMouse />
+        <p className="font-bold">Scroll Up</p>
+      </div>
       <h1 className="font-bold m-auto text-5xl mb-8 w-3/12">My Skills</h1>
-     <div>
+     <div id="skills" className="scroll-smooth">
       <Skills />
       </div>
       <div
         id="works"
-        className="grid grid-cols-2 gap-2 grid-rows-2 mt-40  rounded-lg w-9/12 m-auto"
+        className="grid grid-cols-2 gap-2 grid-rows-2 mt-40  rounded-lg w-8/12 m-auto"
       >
         <div className="flex self-center bg-cyan-200 rounded-full w-9/12 h-48  justify-self-center border-4 border-dashed">
         <h1 className="font-bold col-span-2 h-48 bg-[#C1FAFC] text-[#082D92] clip-path-works justify-center  flex items-center  m-auto text-5xl  w-7/12">My Works</h1>
         </div>
         <div className="border-black">
           <Work
-            image={tiktok}
+            image={Project}
             className1={
-              "rounded-md shadow-xl border-8 border-white col-span-1 items-end border-2"
+              "rounded-md shadow-xl hover:scale-105 hover:shadow-2xl shadow-inner hover:largeShadow border-gray-100 border-8 border-white col-span-1 items-end border-2"
             }
             description=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
         pariatur iste placeat dolorem ut numquam ea vero sequi eligendi quidem
@@ -81,7 +85,7 @@ function Info() {
           <Work
             image={tiktok}
             className1={
-              "border-2 border-white rounded-md shadow-xl border-8 border-white"
+              "border-2 border-white rounded-md shadow-xl hover:scale-105 hover:shadow-2xl shadow-inner hover:largeShadow border-gray-100 border-8 border-white"
             }
             description=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
         pariatur iste placeat dolorem ut numquam ea vero sequi eligendi quidem
@@ -94,7 +98,7 @@ function Info() {
           <Work
             image={stock}
             className1={
-              "border-2 border-white rounded-md shadow-xl border-8 border-white"
+              "border-2 border-white rounded-md shadow-xl hover:scale-105 hover:shadow-2xl shadow-inner hover:largeShadow border-gray-100 border-8 border-white"
             }
             description=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
         pariatur iste placeat dolorem ut numquam ea vero sequi eligendi quidem
@@ -103,11 +107,11 @@ function Info() {
             link="https://tiktok-clone2.vercel.app"
           />
         </div>
-        <div className="row-span-1 w-11/12">
+        <div className="row-span-1 w-full">
           <Work
-            image={tiktok}
+            image={Project}
             className1={
-              "border-2 border-white rounded-md shadow-xl border-8 border-white"
+              "border-2 border-white rounded-md shadow-xl hover:scale-105 hover:shadow-2xl shadow-inner hover:largeShadow border-gray-100 border-8 border-white"
             }
             description=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
         pariatur iste placeat dolorem ut numquam ea vero sequi eligendi quidem
@@ -120,7 +124,7 @@ function Info() {
           <Work
             video={Tiktok}
             className1={
-              "border-2 border-white rounded-md shadow-xl border-8 border-white"
+              "border-2 border-white rounded-md shadow-xl hover:scale-105 hover:shadow-2xl shadow-inner hover:largeShadow border-gray-100 border-8 border-white"
             }
             description=" Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
         pariatur iste placeat dolorem ut numquam ea vero sequi eligendi quidem

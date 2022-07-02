@@ -2,8 +2,7 @@ import React from "react";
 import { BiSend } from "react-icons/bi";
 function Footer() {
   return (
-    <React.Fragment>
-      <div className="flex flex-col bg-[#041C62] text-sm h-96  bottom-0  relative w-full">
+      <div className="flex flex-col relative top-[20rem] bg-[#041C62] text-sm h-96  w-full">
         <div id="horizontal" className="flex h-72 w-8/12 justify-around items-center m-auto">
           <div className="flex items-start mt-4">
         <h1  className="heading text-white  text-5xl">Apotre</h1><span className="text-white">&copy;</span>
@@ -39,7 +38,6 @@ function Footer() {
         &copy;All rights reserved. 2022 Mwenedata Apotre
       </div>
       </div>
-    </React.Fragment>
   );
 }
 

@@ -6,13 +6,12 @@ import Info from './../components/info';
 function Home() {
     return (
         <React.Fragment>
-            <div className="h-full ">
+            <div className="h-full flex flex-col justify-around">
             <NavBar />
             <Info />
             <Testimonial />
             <Footer />
             </div>
-            
         </React.Fragment>
      );
 }

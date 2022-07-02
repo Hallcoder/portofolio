@@ -1,7 +1,7 @@
 import React from "react";
 function Work({ className1,image,video, description, link }) {
   return (
-    <div className={className1 + "hover:scale-125"} >
+    <div className={className1} >
     {image && <img src={image} alt="" className='peer  w-full object-fit h-80  cursor-pointer' />} 
     {video && <video    autoPlay muted >
       <source src={video}/></video>} 

@@ -12,7 +12,7 @@ function NavBar() {
         <ul className="flex w-10/12 justify-around ">
           <li className="text-md cursor-pointer text-[#082D92] hover:border-b-2 hover:border-red-400 transition-all delay-250 font-black">Home</li>
           <li className="text-md cursor-pointer text-[#082D92] hover:border-b-2 hover:border-red-400 transition-all delay-250 font-black">About</li>
-          <li className="text-md cursor-pointer text-[#082D92] hover:border-b-2 hover:border-red-400 transition-all delay-250 font-black">Skills</li>
+          <li className="text-md cursor-pointer text-[#082D92] hover:border-b-2 hover:border-red-400 transition-all delay-250 font-black"><a href="#quickMessage">Skills</a></li>
           <li className="text-md cursor-pointer text-[#082D92] hover:border-b-2 hover:border-red-400 transition-all delay-250 font-black">Contact</li>
         </ul>
       </div>
